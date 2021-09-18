@@ -4,12 +4,15 @@
   "description": "You can use the [editor on GitHub](https://github.com/Morgwee/PWATracker/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
   "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.12.3",
-    "@babel/preset-react": "^7.14.5",
-    "babel-cli": "^6.26.0"
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^10.0.0",
+    "http-server": "^0.12.3"
   },
   "scripts": {
-    "build": "node_modules/.bin/babel src --out-dir . --presets react-app/prod",
+    "build": "npx babel src --out-dir . --plugins=@babel/plugin-transform-react-jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
