@@ -1,4 +1,4 @@
-export default function List() {
+export default function Listo() {
 
 	const [items, setItems] = React.useState([]);
 
