@@ -6,13 +6,12 @@
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
-    "@babel/plugin-transform-react-jsx": "^7.14.9",
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^10.0.0",
+    "@babel/preset-react": "^7.14.5",
     "http-server": "^0.12.3"
   },
   "scripts": {
-    "build": "npx babel src --out-dir . --plugins=@babel/plugin-transform-react-jsx",
+    "build": "npx babel src --out-dir . --presets @babel/preset-react",
+    "dev": "node_modules/http-server/bin/http-server && npx babel src --watch --out-dir . --presets @babel/preset-react",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

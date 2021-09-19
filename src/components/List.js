@@ -10,7 +10,7 @@ export default function List() {
                 data.Resources.forEach(item => {
                     let linkItem = (
                         <div key={item.url}>
-                            <a href={item.url} target="_blank">{item.title}</a>
+                            <a href={item.url} target="_blank">Item:{item.title}</a>
                         </div>
                     )
                     linkItems.push(linkItem);
