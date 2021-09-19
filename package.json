@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "npx babel src --out-dir . --presets @babel/preset-react",
-    "dev": "node_modules/http-server/bin/http-server && npx babel src --watch --out-dir . --presets @babel/preset-react",
+    "dev": "npx http-server && npx babel src --watch --out-dir . --presets @babel/preset-react",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
