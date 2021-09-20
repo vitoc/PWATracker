@@ -1,5 +1,5 @@
+git add .
 changes=$(git update-index --refresh | wc -l)
-
 if [ $changes -ge 1 ]; then
     echo "Uncommitted changes exists."
     git config --local user.email "github-actions@users.noreply.github.com"

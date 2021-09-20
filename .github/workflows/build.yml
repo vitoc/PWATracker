@@ -11,3 +11,7 @@ jobs:
         - run: npm install
         - run: npm run build
         - run: .github/conditional_commit.sh
+        - name: Push changes
+          uses: ad-m/github-push-action@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }} 
