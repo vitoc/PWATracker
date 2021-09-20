@@ -9,7 +9,7 @@ export default function List() {
         }, /*#__PURE__*/React.createElement("a", {
           href: item.url,
           target: "_blank"
-        }, "I: ", item.title));
+        }, item.title));
         linkItems.push(linkItem);
       });
       setItems(linkItems);
