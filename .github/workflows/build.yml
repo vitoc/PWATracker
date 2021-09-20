@@ -10,6 +10,7 @@ jobs:
             node-version: '14'
         - run: npm install
         - run: npm run build
+        - run: git add .        
         - run: .github/conditional_commit.sh
         - name: Push changes
           uses: ad-m/github-push-action@master
